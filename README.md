@@ -2,6 +2,8 @@
  
 This git genrates a model that clasifies messages or tweets after a disaster (in this case this data is provided by Figure Eight). to generate the model, the scripts useas NLP (Natural Language Procesing) pipline to clasifiy the messages.  after the model is created, a ".pkl" file is created to then be used to visualize and posprocess the model results in a web app using Flask. 
 
+**The overall acurracy obtained by the model is arround 94.71% (this value will change depending on the division of the test and train data).**
+
 ## Project Subdivision
 
 The python code contains 3 main processes:
