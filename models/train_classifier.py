@@ -108,7 +108,7 @@ def evaluate_model(model, X_test, Y_test, category_names):
     Parameters
     ----------
     model : Pipeline.fit
-        DESCRIPTION.
+        
     X_test : pd.DataFrame
         messages dataframe.
     Y_test : pd.DataFrame
@@ -133,7 +133,16 @@ def evaluate_model(model, X_test, Y_test, category_names):
     print('The model accuracy score is %0.4f' %(accuracy))
 
 def save_model(model, model_filepath):
+    '''
+    Fit the model and print results
 
+    Parameters
+    ----------
+    model : Pipeline.fit
+        Model you want to export.
+	model_filepath : string
+        Path containing name of the file.
+	'''
     with open(model_filepath,'wb') as f:
         pickle.dump(model,f)
 
